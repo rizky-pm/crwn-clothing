@@ -6,7 +6,7 @@ import { addItem } from "../../redux/cart/cart.actions";
 
 import "./collection-item.styles.scss";
 
-const collectionItem = ({ item, addItem }) => {
+const CollectionItem = ({ item, addItem }) => {
     const { name, price, imageUrl } = item;
     return (
         <div className="collection-item">
@@ -31,4 +31,4 @@ const mapDispatchToProps = dispatch => ({
     addItem: item => dispatch(addItem(item))
 });
 
-export default connect(null, mapDispatchToProps)(collectionItem);
+export default connect(null, mapDispatchToProps)(CollectionItem);
