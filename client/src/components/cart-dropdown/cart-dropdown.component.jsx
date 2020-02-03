@@ -9,9 +9,9 @@ import { toggleCartHidden } from "../../redux/cart/cart.actions";
 
 import {
     CartDropdownContainer,
-    CartItemsContainer,
+    CartDropdownButton,
     EmptyMessageContainer,
-    CartDropdownButton
+    CartItemsContainer
 } from "./cart-dropdown.styles";
 
 const CartDropdown = ({ cartItems, history, dispatch }) => (
@@ -33,7 +33,7 @@ const CartDropdown = ({ cartItems, history, dispatch }) => (
                 dispatch(toggleCartHidden());
             }}
         >
-            CHECKOUT NOW
+            GO TO CHECKOUT
         </CartDropdownButton>
     </CartDropdownContainer>
 );
